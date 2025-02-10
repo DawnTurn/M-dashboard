@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#E7E6ED",
+        background: "#EEEDF2",
         navLinkBg: "#C7C4D1",
         sideBarBg: "#DDE4EF",
         primary: "#1C2458",
@@ -19,13 +19,8 @@ export default {
         teamBg: "#E6881B",
         pSolvingBg: "#883039",
         majorBg: "#FF5263",
-        labelColor1: "#C57315",
-        labelColor2: "#EC671F",
-        labelColor3: "#E90017",
-        descriptionHeadBg: "#DBD8E4",
-        errorTextColor: "#FF8C97",
-        successTextColor: "#18B755",
-        partialTextColor: "#F1BC7E",
+        highlightBg: "#ECEAF2",
+        expertColor: '#B78B23',
       },
       
     },

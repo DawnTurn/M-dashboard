@@ -2,9 +2,15 @@ import Image from "next/image"
 import Link from "next/link"
 import editIcon from '../../../public/images/editIcon.png'
 import Skill from "@/components/profile/Skill"
-import Experience from "@/components/profile/Experience"
+import Expertise from "@/components/profile/Expertise"
+import Certification from "@/components/profile/Certification"
 
-export default function About() {
+interface AboutProps {
+    onExpertiseOpenModal: () => void;
+    onCertificationOpenModal: () => void;
+}
+
+export default function About({onExpertiseOpenModal, onCertificationOpenModal}: AboutProps) {
     return (
         <div className="bg-white w-[75%] rounded-xl px-6 py-4">
             <div className="flex justify-between items-center mb-6">
@@ -12,14 +18,14 @@ export default function About() {
                 <button>
                     <Link href={''} className="bg-primary flex gap-2 items-center px-4 py-2 rounded-3xl">
                         <Image src={editIcon} width={12} alt=""/>
-                        <a className="text-[.7rem] text-white">Edit Profile</a>
+                        <span className="text-[.7rem] text-white">Edit Profile</span>
                     </Link>
                 </button>
             </div>
 
             <div>
                 <h2 className="text-xl mb-4">About me</h2>
-                <p className="text-sm mb-12">Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                <p className="text-sm mb-10">Contrary to popular belief, Lorem Ipsum is not simply random text. 
                     It has roots in a piece of classical Latin literature from 45 BC, 
                     making it over 2000 years old. Richard McClintock, a Latin professor 
                     at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin 
@@ -37,7 +43,10 @@ export default function About() {
 
             <div className="h-[2px] w-full bg-gray-200"></div>
 
-            <Experience/>
+            <div className="flex w-full justify-between pt-10 pb-4">
+                <Expertise onExpertiseOpenModal={onExpertiseOpenModal}/>
+                <Certification onCertificationOpenModal={onCertificationOpenModal}/>
+            </div>
         </div>
     )
 }
