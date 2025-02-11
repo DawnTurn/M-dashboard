@@ -13,7 +13,7 @@ export default function DepartmentSec(){
                 </button>
             </div>
 
-            <div className="flex flex-col gap-4 px-2">
+            <div className="flex flex-col gap-4">
                 <Link href={''}>
                     <button className="rounded-3xl bg-white py-4 px-6 w-full flex items-center justify-between">
                         <p className="text-sm">Finance</p>
