@@ -8,7 +8,7 @@ export default function DepartmentSec(){
             <div className="w-full flex justify-between items-center mb-5">
                 <h2>Department</h2>
 
-                <button className="cursor-pointer">
+                <button className="cursor-pointer text-sm">
                     View
                 </button>
             </div>

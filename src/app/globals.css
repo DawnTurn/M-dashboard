@@ -23,3 +23,7 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.bg-linear{
+  background: linear-gradient(to top, black, #00000097, #00000041, #00000041, #00000008);
+}

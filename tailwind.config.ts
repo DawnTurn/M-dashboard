@@ -21,6 +21,7 @@ export default {
         majorBg: "#FF5263",
         highlightBg: "#ECEAF2",
         expertColor: '#B78B23',
+        testimonialHighlight: '#8C4569',
       },
       
     },
