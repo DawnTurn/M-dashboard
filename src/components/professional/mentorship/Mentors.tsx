@@ -50,7 +50,7 @@ export default function Mentors() {
     
     return(
        <div className="mt-6 w-full flex gap-4">
-            <div className="flex flex-wrap gap-4 w-[75%]">
+            <div className="flex flex-wrap gap-4 w-[75%] row-span-2">
                 {availableMentors.map((availableMentor, i) => (
                     <MentorCard 
                         key={i}
