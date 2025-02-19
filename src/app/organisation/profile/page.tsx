@@ -3,8 +3,8 @@ import { useState } from "react";
 import Nav from "@/components/Nav";
 import NavBar from "@/components/NavBar/NavBar";
 import SideBar from "@/components/SideBar/SideBarCard";
-import ProfileContainer from "@/components/organisation/profile/ProfileContainer";
-import AProfessionalsM from "@/components/organisation/modal/AProfessionalsM"
+import ProfileContainer from "@/components/organisations/profile/ProfileContainer";
+import AProfessionalsM from "@/components/organisations/modal/AProfessionalsM"
 
 export default function ProfilePage() {
 
