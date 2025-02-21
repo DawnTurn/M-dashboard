@@ -16,7 +16,7 @@ export default function About({onExpertiseOpenModal, onCertificationOpenModal}: 
             <div className="flex justify-between items-center mb-6">
                 <p className="text-sm">Public View</p>
                 <button>
-                    <Link href={''} className="bg-primary flex gap-2 items-center px-4 py-2 rounded-3xl">
+                    <Link href={'/professional/profile/edit-profile'} className="bg-primaryNew flex gap-2 items-center px-4 py-2 rounded-3xl">
                         <Image src={editIcon} width={12} alt=""/>
                         <span className="text-[.7rem] text-white">Edit Profile</span>
                     </Link>

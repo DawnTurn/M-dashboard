@@ -2,8 +2,8 @@ import Image from "next/image"
 import profilePic from '../../../../public/images/pheonix-logo.svg'
 import markedStar from '../../../../public/images/markedStar.png'
 import star from '../../../../public/images/star.png'
-import AProfessionals from "@/components/organisation/profile/AProfessionals"
-import Accreditation from "@/components/organisation/profile/Accreditation"
+import AProfessionals from "@/components/organisations/profile/AProfessionals"
+import Accreditation from "@/components/organisations/profile/Accreditation"
 
 interface ProfileCardProps{
     onOpenModal: () => void;

@@ -9,11 +9,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#EEEDF2",
+        backgroundNew: "#EEEDF2",
         navLinkBg: "#C7C4D1",
         sideBarBg: "#DDE4EF",
-        primary: "#1C2458",
-        profileCardBg: "#DFDDE5",
+        primaryNew: "#1C2458",
+        mainCardBg: "#DFDDE5",
         auditingBg: "#136783",
         leadershipBg: "#874465",
         teamBg: "#E6881B",

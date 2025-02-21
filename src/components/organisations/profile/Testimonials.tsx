@@ -1,6 +1,6 @@
 
 import testProfilePic from '../../../../public/images/Testimonial-profile.png'
-import TestimonialCard from "@/components/organisation/profile/TestimonialCard"
+import TestimonialCard from "@/components/organisations/profile/TestimonialCard"
 
 export default function Testimonials() {
 

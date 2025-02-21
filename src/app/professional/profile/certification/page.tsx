@@ -1,6 +1,6 @@
 import Nav from '@/components/Nav'
 import NavBar from '@/components/NavBar/NavBar'
-import SideBar from '@/components/SideBar/SideBarCard'
+import SideBar from '@/components/SideBar-New/SideBarCard'
 import Image from 'next/image'
 import certificateLargeView from '../../../../../public/images/CetificateLargeView.png'
 

@@ -18,7 +18,7 @@ export default function MentorRegister(){
                 <i className="bx bx-chevron-right text-2xl"></i>
             </div>
 
-            <div className="bg-primary rounded-3xl text-center w-[22%]">
+            <div className="bg-primaryNew rounded-3xl text-center w-[22%]">
                 <Link href={''}>
                     <button className="py-4 px-5 text-[.8rem] text-white">
                         Become a Mentor

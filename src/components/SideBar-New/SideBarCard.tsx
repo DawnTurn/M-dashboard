@@ -1,5 +1,5 @@
-import NavigationLinks from '@/components/SideBar/NavigationLinks';
-import DepartmentSec from '@/components/SideBar/DepartmentSec';
+import NavigationLinks from '@/components/SideBar-New/NavigationLinks';
+import DepartmentSec from '@/components/SideBar-New/DepartmentSec';
 
 interface SideBarProps{
     dashboardBg?: string;

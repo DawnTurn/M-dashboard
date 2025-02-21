@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Nav from "@/components/Nav";
 import NavBar from "@/components/NavBar/NavBar";
-import SideBar from "@/components/SideBar/SideBarCard";
+import SideBar from "@/components/SideBar-New/SideBarCard";
 import ProfileContainer from "@/components/professional/profile/ProfileContainer";
 import ExpertiseModal from "@/components/professional/modal/ExpertiseModal";
 import CertificateModal from "@/components/professional/modal/CertificateModal";
@@ -19,7 +19,7 @@ export default function ProfilePage() {
     });
 
     return (
-        <div className="bg-background h-screen pb-10">
+        <div className="bg-backgroundNew h-screen pb-10">
             {isModalOpen.expertise && <ExpertiseModal onExpertiseClose={() => setIsModalOpen(
                 (prev) => ({...prev, expertise: false})
             )} />}
@@ -29,10 +29,10 @@ export default function ProfilePage() {
             )} /> }
 
             <div className="w-full bg-map">
-                <Nav />
-                <NavBar />
+                <Nav/>
+                <NavBar/>
                 <div className="flex px-7 gap-8 max-w-[1440px] mx-auto">
-                    <SideBar profileBg="bg-primary text-white"/>
+                    <SideBar profileBg="bg-primaryNew text-white"/>
                     <ProfileContainer 
                         onExpertiseOpenModal={() => setIsModalOpen(
                             (prev) => ({...prev, expertise: true})

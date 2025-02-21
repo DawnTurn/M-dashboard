@@ -14,7 +14,7 @@ export default function Nav(){
                     <li><a href="#">Learning</a></li>
                 </ul>
 
-                <a href="#" className='flex items-center bg-background py-1 ps-6 pe-4 rounded-3xl text-sm'>
+                <a href="#" className='flex items-center bg-backgroundNew py-1 ps-6 pe-4 rounded-3xl text-sm'>
                     Msspace
                     <i className="bx bx-chevron-right text-2xl"></i>
                 </a>
