@@ -27,6 +27,8 @@ export default function EditProfileP(){
     const skillPopupRef = useRef<HTMLDivElement>(null);
     const expertisePopupRef = useRef<HTMLDivElement>(null);
 
+    const [showExperienceModal, setShowExperienceModal] = useState(false);
+
     const [availableSkills, setAvailableSkills] = useState([ 
         "Luxury Branding", 
         "Marketing", 
@@ -204,6 +206,7 @@ export default function EditProfileP(){
                                     }
                                 </ul>
 
+                                {/* add Skills */}
                                 <div className="text-center">
                                     {searchSkill && 
                                         !availableSkills.some(skill => skill.toLowerCase() === searchSkill.toLowerCase()) && filteredSkills.length === 0 && (
@@ -257,7 +260,8 @@ export default function EditProfileP(){
                                         onChange={(e) => setSearchExpertise(e.target.value)}
                                     />
                                 </div>
-
+                                
+                                {/* filter expertise list */}
                                 <ul className="max-h-72 overflow-y-auto flex flex-col gap-1">
                                     {availableExpertise.filter(exp => exp.toLowerCase().includes(searchExpertise.toLowerCase())).map((exp, i) => (
                                         <li key={`${exp}-${i}`}>
@@ -291,10 +295,14 @@ export default function EditProfileP(){
                 <div className="flex gap-10 mt-12">
                     {/* add experience */}
                     <div className="w-1/2">
-                        <div className="w-full flex flex-col gap-2 justify-center items-center h-[12em] bg-white rounded-2xl cursor-pointer">
+                        <div 
+                            onClick={() => setShowExperienceModal(true)}
+                            className="w-full flex flex-col gap-2 justify-center items-center h-[12em] bg-white rounded-2xl cursor-pointer">
                             <Image src={addExperienceUpLogo} alt="experience logo" width={50}/>
                             <p className="text-sm">Add Experience</p>
                         </div>
+                        
+                        {/* Experience List */}
                         <div className="w-[90%] px-4 mx-auto mt-6 flex items-center gap-6">
                             <div className="text-sm">
                                 <div className="flex justify-between mb-2">
@@ -315,6 +323,60 @@ export default function EditProfileP(){
                                 <i className="bx bx-x text-3xl text-gray-500 cursor-pointer"></i>
                             </div>
                         </div>
+
+                        {/* experience modal */}
+                        {showExperienceModal && (
+                            <div className="fixed w-screen h-screen top-0 left-0 z-10 flex justify-center items-center bg-black/50 transition-all">
+                                <div ref={skillPopupRef} className="mt-2 w-[400px] bg-highlightBg border rounded-xl shadow-lg py-6 px-8 transition-all">
+                                    <div className="text-center">
+                                        <h4 className="font-bold mb-6">Add Experience</h4>
+                                    </div>
+                                    
+                                    <div className="mb-4 text-sm">
+                                        <label htmlFor="organisation" className="text-[.7rem]">Organisation</label>
+                                        <input
+                                            type="text"
+                                            name="organisation"
+                                            className="py-2 px-3 w-full focus:outline-none bg-white rounded-3xl mt-1"
+                                        />
+                                    </div>
+
+                                    <div className="mb-4 flex gap-2 text-sm">
+                                        <div className="w-[70%]">
+                                            <label htmlFor="position" className="text-[.7rem]">Position</label>
+                                            <input
+                                                type="text"
+                                                name="position"
+                                                className="py-2 px-3 w-full focus:outline-none bg-white rounded-3xl mt-1"
+                                            />
+                                        </div>
+
+                                        <div className="w-[30%]">
+                                            <label htmlFor="duration" className="text-[.7rem]">Duration</label>
+                                            <input
+                                                type="text"
+                                                name="duration"
+                                                className="py-2 px-3 w-full focus:outline-none bg-white rounded-3xl mt-1"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <div className="mb-4 text-sm">
+                                        <label htmlFor="description" className="text-[.7rem]">Description</label>
+                                        <textarea
+                                            name="description"
+                                            className="py-2 px-3 w-full focus:outline-none bg-white rounded-2xl mt-1"
+                                        />
+                                    </div>
+
+                                    <div className="text-center">
+                                        <button className="bg-primaryNew text-white px-10 py-2 rounded-3xl">
+                                            Add
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        )}
                     </div>
 
                     {/* add certificate */}
@@ -342,8 +404,8 @@ export default function EditProfileP(){
                     </div>
                 </div>
 
-                <div className="text-center mt-10">
-                    <button className="bg-primaryNew text-white px-16 py-4 rounded-3xl">
+                <div className="text-center mt-10"> 
+                    <button className="bg-primaryNew text-white px-16 py-2 rounded-3xl">
                         Save Changes
                     </button>
                 </div>
