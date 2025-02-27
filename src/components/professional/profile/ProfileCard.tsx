@@ -20,12 +20,12 @@ export default function ProfileCard() {
                     <div className="flex items-center gap-1">
                         <Image src={star} width={15} alt="an empty star rating"></Image>
                         <Image src={star} width={15} alt="an empty star rating"></Image>
-                        <Image src={star} width={15} alt="an empty star rating"></Image>
                         <Image src={markedStar} width={15} alt="a marked star rating"></Image>
+                        <Image src={star} width={15} alt="an empty star rating"></Image>
                         <Image src={star} width={15} alt="an empty star rating"></Image>
                     </div>
                 </div>
-            </div>
+            </div> 
 
             <div className="h-[1px] w-full bg-gray-400 my-10"></div>
 
