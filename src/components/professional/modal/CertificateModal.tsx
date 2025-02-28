@@ -1,9 +1,5 @@
 import Image from "next/image"
-import cancelLogo from '../../../../public/images/cancel.svg'
 import Link from "next/link";
-import foodsafetyCertificate from '../../../../public/images/foodSafetyCertificate.png'
-import qualityCertificate from '../../../../public/images/qualityCertificate.png'
-import foodsafetyCertificate2 from '../../../../public/images/FoodSafetyCertificate2.png'
 
 interface CertificationModalProps {
     onCertificationClose: () => void;
@@ -16,7 +12,7 @@ export default function CertificateModal({ onCertificationClose }: Certification
                 <div className="px-4">
                     <div className="flex justify-end">
                         <Image 
-                            src={cancelLogo}
+                            src={`/images/cancel.svg`}
                             alt="Close"
                             onClick={onCertificationClose}
                             className="cursor-pointer"
@@ -28,7 +24,7 @@ export default function CertificateModal({ onCertificationClose }: Certification
                 <div className="flex flex-col gap-[2px]">
                     <div className="flex justify-between items-center px-8 py-4 bg-white">
                         <div className="flex items-center gap-3 text-[.8rem]">
-                            <Image src={foodsafetyCertificate} width={80} alt=""/>
+                            <Image src={`/images/foodSafetyCertificate.png`} width={80} alt=""/>
                             <div>
                                 <h3 className="font-bold">Certificate of Completion</h3>
                                 <p>Food safety</p>
@@ -41,7 +37,7 @@ export default function CertificateModal({ onCertificationClose }: Certification
 
                     <div className="flex justify-between items-center px-8 py-4 bg-white">
                         <div className="flex items-center gap-3 text-[.8rem]">
-                            <Image src={qualityCertificate} width={70} alt=""/>
+                            <Image src={`/images/qualityCertificate.png`} width={70} alt=""/>
                             <div>
                                 <h3 className="font-bold">Certificate of Completion</h3>
                                 <p>Quality Management System</p>
@@ -54,7 +50,7 @@ export default function CertificateModal({ onCertificationClose }: Certification
 
                     <div className="flex justify-between items-center px-8 py-4 bg-white">
                         <div className="flex items-center gap-3 text-[.8rem]">
-                            <Image src={foodsafetyCertificate2} width={80} alt=""/>
+                            <Image src={`/images/FoodSafetyCertificate2.png`} width={80} alt=""/>
                             <div>
                                 <h3 className="font-bold">Certificate of Completion</h3>
                                 <p>Food safety</p>
