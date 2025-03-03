@@ -1,3 +1,4 @@
+import { useState } from "react";
 import MentorCard from "./MentorCard";
 import MentorInfo from "./MentorInfo";
 import mentorProfile1 from '../../../../public/images/mentorProfile1.png'
@@ -6,9 +7,19 @@ import mentorProfile3 from '../../../../public/images/mentorProfile3.png'
 import mentorProfile4 from '../../../../public/images/mentorprofile4.png'
 import mentorProfile5 from '../../../../public/images/mentorProfile5.png'
 import mentorProfile6 from '../../../../public/images/mentorProfile6.png'
+import { StaticImageData } from "next/image";
 
+interface MentorProps {
+    name: string;
+    image: StaticImageData
+    title: string;
+    description: string;
+}
 
 export default function Mentors() {
+
+    const [selectedMentor, setSelectedMentor] = useState<MentorProps | null>(null)
+
     const availableMentors = [
         {
             name: 'Chukwudi Eze',
@@ -52,16 +63,19 @@ export default function Mentors() {
        <div className="mt-6 w-full flex gap-4">
             <div className="flex flex-wrap gap-4 w-[75%] row-span-2">
                 {availableMentors.map((availableMentor, i) => (
-                    <MentorCard 
-                        key={i}
-                        name={availableMentor.name}
-                        imageSRC={availableMentor.image}
-                        title={availableMentor.title}
-                        description={availableMentor.description}
-                    />
+                    <div className="basis-1/4 flex-1" onClick={() => setSelectedMentor(availableMentor)}>
+                        <MentorCard 
+                            key={i}
+                            name={availableMentor.name}
+                            imageSRC={availableMentor.image}
+                            title={availableMentor.title}
+                            description={availableMentor.description}
+                        />
+                    </div>
                 ))}
             </div>
-            <MentorInfo/>
+
+            <MentorInfo mentor={selectedMentor}/>
        </div>
     )
 }

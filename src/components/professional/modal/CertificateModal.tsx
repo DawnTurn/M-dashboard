@@ -6,6 +6,7 @@ interface CertificationModalProps {
 }
 
 export default function CertificateModal({ onCertificationClose }: CertificationModalProps){
+    
     return(
         <div className="fixed w-full h-screen flex items-center justify-center bg-black/50 overflow-y-auto">
             <div className="w-[420px] bg-mainCardBg/80 backdrop-blur-[3px] py-6 rounded-xl">
