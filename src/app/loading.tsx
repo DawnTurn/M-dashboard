@@ -1,18 +1,35 @@
 
 export default function Loading() {
   return (
-    <div className="p-6 max-w-3xl mx-auto">
-      <div className="animate-pulse flex flex-col items-center">
-        <div className="w-32 h-32 bg-gray-300 rounded-full"></div>
-        <div className="h-4 w-48 bg-gray-300 rounded mt-4"></div>
-        <div className="h-3 w-32 bg-gray-300 rounded mt-2"></div>
-      </div>
+      <div className="w-full h-[75vh] bg-mainCardBg flex rounded-xl overflow-hidden">
+            <div className="w-[30%] animate-pulse p-6">
+                <div className="bg-navLinkBg w-full h-[18em] rounded-xl">
 
-      <div className="mt-6 space-y-4">
-        <div className="h-4 w-full bg-gray-300 rounded"></div>
-        <div className="h-4 w-5/6 bg-gray-300 rounded"></div>
-        <div className="h-4 w-3/4 bg-gray-300 rounded"></div>
-      </div>
-    </div>
+                </div>
+                <div className="bg-navLinkBg w-full h-[2em] rounded-lg mt-4"></div>
+                <div className="bg-navLinkBg w-full h-[2em] rounded-lg mt-4"></div>
+
+                <div className="flex gap-4 mt-10">
+                    <div className="bg-navLinkBg w-[70%] h-[1em] rounded-lg mt-4"></div>
+                    <div className="bg-navLinkBg w-[30%] h-[1em] rounded-lg mt-4"></div>
+                </div>
+
+                <div className="flex gap-4 mt-2">
+                    <div className="bg-navLinkBg w-[70%] h-[1em] rounded-lg mt-4"></div>
+                    <div className="bg-navLinkBg w-[30%] h-[1em] rounded-lg mt-4"></div>
+                </div>
+
+                <div className="bg-navLinkBg w-[65%] h-[1em] rounded-lg mt-4"></div>
+                <div className="bg-navLinkBg w-[75%] h-[1em] rounded-lg mt-4"></div>
+                <div className="bg-navLinkBg w-[65%] h-[1em] rounded-lg mt-4"></div>
+                <div className="bg-navLinkBg w-[50%] h-[1em] rounded-lg mt-4"></div>
+            </div>
+
+            <div className="w-[70%] pr-6 py-6 flex flex-col justify-between animate-pulse">
+                <div className="bg-navLinkBg w-full h-[18em] rounded-lg"></div>
+                <div className="bg-navLinkBg w-full h-[10em] rounded-lg"></div>
+                <div className="bg-navLinkBg w-full h-[10em] rounded-lg"></div>
+            </div>
+        </div>
   );
 }
