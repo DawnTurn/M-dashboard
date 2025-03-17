@@ -7,21 +7,21 @@ export default function NavBar() {
             <div className="flex gap-4">
                <button>
                      <Link href={''} className="flex gap-2 px-4 py-2 bg-navLinkBg items-center rounded-3xl">
-                        <Image src={`/images/workspace.png`} alt="a workspace logo"></Image>
+                        <Image src={`/images/workspace.png`} width={12} height={12} alt="a workspace logo"></Image>
                         <span>Workspace</span>
                     </Link>
                </button>
 
                 <button>
                     <Link href={''} className="flex gap-2 px-4 py-2 bg-navLinkBg items-center rounded-3xl">
-                        <Image src={`/images/trainingLogo.png`} alt="a workspace logo"></Image>
+                        <Image src={`/images/trainingLogo.png`} width={20} height={20} alt="a workspace logo"></Image>
                         <span>Training</span>
                     </Link>
                 </button>
 
                 <button>
                     <Link href={''} className="flex gap-2 px-4 py-2 bg-navLinkBg items-center rounded-3xl">
-                        <Image src={`/images/certification.png`} alt="a workspace logo"></Image>
+                        <Image src={`/images/certification.png`} width={20} height={20} alt="a workspace logo"></Image>
                         <span>Certification</span>
                     </Link>
                 </button>
@@ -34,27 +34,27 @@ export default function NavBar() {
             <div className="flex gap-4">
                 <button>
                     <Link href={''} className="flex gap-2 px-4 py-2 bg-navLinkBg items-center rounded-3xl">
-                        <Image src={`/images/share.png`} alt="a workspace logo"></Image>
+                        <Image src={`/images/share.png`} width={12} height={12} alt="a workspace logo"></Image>
                         <span>Share</span>
                     </Link>
                 </button>
 
                 <button>
                     <Link href={''} className="flex gap-2 px-4 py-2 bg-navLinkBg items-center rounded-3xl">
-                        <Image src={`/images/hire.png`} alt="a workspace logo"></Image>
+                        <Image src={`/images/hire.png`} width={12} height={12} alt="a workspace logo"></Image>
                         <span>Hire Professionals</span>
                     </Link>
                 </button>
 
                <button>
                      <Link href={''} className="flex gap-3 px-3 py-3 bg-navLinkBg rounded-full">
-                        <Image src={`/images/message.png`} width={18}alt="a workspace logo"></Image>
+                        <Image src={`/images/message.png`} width={12} height={12}alt="a workspace logo"></Image>
                     </Link>
                </button>
 
                 <button>
                     <Link href={''} className="flex gap-3 px-3 py-3 bg-navLinkBg rounded-full">
-                        <Image src={`/images/User.png`} width={18} alt="a workspace logo"></Image>
+                        <Image src={`/images/User.png`} width={12} height={12} alt="a workspace logo"></Image>
                     </Link>
                 </button>
             </div>
