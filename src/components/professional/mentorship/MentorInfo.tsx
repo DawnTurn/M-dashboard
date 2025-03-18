@@ -23,7 +23,7 @@ export default function MentorInfo({ mentor }: MentorInfoProps) {
                 />
                 <h2 className="text-xl mt-3">{mentor.name}</h2>
                 <button className="mt-8">
-                    <Link href={``} className="bg-highlightBg text-sm font-normal px-10 py-3 rounded-3xl">
+                    <Link href={`/professional/mentorship/book-mentor`} className="bg-highlightBg text-sm font-normal px-10 py-3 rounded-3xl">
                         Book Mentor
                     </Link>
                 </button>
